@@ -1,0 +1,428 @@
+{
+  "clients": [
+    {
+      "id": "C001",
+      "name": "Priya Sharma",
+      "age": 34,
+      "city": "Mumbai",
+      "portfolio_value": 2850000,
+      "sip_amount": 15000,
+      "risk_profile": "Moderate",
+      "annual_income": 1800000,
+      "monthly_expenses": 65000,
+      "financial_goal": "Child education + retirement at 58",
+      "investments": {
+        "equity": 58,
+        "debt": 28,
+        "gold": 8,
+        "real_estate": 6
+      },
+      "funds": [
+        { "name": "Mirae Asset Large Cap", "value": 620000, "returns_1yr": 14.2, "returns_3yr": 11.8, "type": "Large Cap", "sip": 4000 },
+        { "name": "Axis Bluechip Fund", "value": 480000, "returns_1yr": 12.8, "returns_3yr": 10.4, "type": "Large Cap", "sip": 3000 },
+        { "name": "HDFC Mid-Cap Opportunities", "value": 390000, "returns_1yr": 22.4, "returns_3yr": 18.6, "type": "Mid Cap", "sip": 4000 },
+        { "name": "SBI Small Cap Fund", "value": 280000, "returns_1yr": 31.2, "returns_3yr": 22.1, "type": "Small Cap", "sip": 2000 },
+        { "name": "ICICI Pru Liquid Fund", "value": 180000, "returns_1yr": 7.1, "returns_3yr": 6.8, "type": "Liquid", "sip": 2000 }
+      ],
+      "banking": {
+        "savings_account": { "bank": "HDFC Bank", "balance": 180000, "interest_rate": 3.5 },
+        "fd": [
+          { "bank": "SBI", "amount": 500000, "tenure_months": 12, "interest_rate": 7.1, "maturity_date": "2026-11-01" },
+          { "bank": "HDFC Bank", "amount": 200000, "tenure_months": 6, "interest_rate": 6.8, "maturity_date": "2026-07-15" }
+        ],
+        "loans": [
+          { "type": "Home Loan", "bank": "HDFC Bank", "outstanding": 3200000, "emi": 28500, "rate": 8.75, "tenure_remaining_months": 180 }
+        ]
+      },
+      "insurance": {
+        "term_life": { "cover": 10000000, "premium": 18000, "insurer": "HDFC Life", "policy_term_years": 30 },
+        "health": { "cover": 500000, "premium": 12000, "insurer": "Star Health", "family_floater": true },
+        "life_stage": "Married with 1 child",
+        "coverage_gap": "Health cover low — recommend upgrade to ₹10L"
+      },
+      "tax": {
+        "section_80c_invested": 145000,
+        "section_80c_limit": 150000,
+        "section_80c_remaining": 5000,
+        "taxable_income": 1620000,
+        "tax_bracket": "30%",
+        "tax_payable": 280000,
+        "elss_invested": 50000,
+        "nps_invested": 50000,
+        "hra_claimed": true,
+        "home_loan_interest_claimed": 200000,
+        "capital_gains": { "stcg": 45000, "ltcg": 120000 }
+      },
+      "real_estate": {
+        "properties": [
+          { "type": "Residential", "city": "Mumbai", "value": 8500000, "purchase_price": 5500000, "rental_income": 0, "status": "Self-occupied" }
+        ],
+        "home_loan_outstanding": 3200000,
+        "rental_yield": 0
+      },
+      "retirement": {
+        "target_retirement_age": 58,
+        "years_to_retirement": 24,
+        "current_corpus": 2850000,
+        "required_corpus": 45000000,
+        "monthly_retirement_need": 120000,
+        "nps_balance": 280000,
+        "nps_monthly_contribution": 5000,
+        "ppf_balance": 420000,
+        "ppf_annual_contribution": 150000,
+        "epf_balance": 680000
+      }
+    },
+    {
+      "id": "C002",
+      "name": "Rahul Mehta",
+      "age": 45,
+      "city": "Bangalore",
+      "portfolio_value": 8200000,
+      "sip_amount": 50000,
+      "risk_profile": "Conservative",
+      "annual_income": 4200000,
+      "monthly_expenses": 120000,
+      "financial_goal": "Retire at 55 with ₹10Cr corpus",
+      "investments": {
+        "equity": 35,
+        "debt": 50,
+        "gold": 10,
+        "real_estate": 5
+      },
+      "funds": [
+        { "name": "SBI Debt Fund", "value": 2100000, "returns_1yr": 7.4, "returns_3yr": 6.9, "type": "Debt", "sip": 15000 },
+        { "name": "ICICI Pru Balanced Advantage", "value": 1800000, "returns_1yr": 10.2, "returns_3yr": 9.1, "type": "Hybrid", "sip": 20000 },
+        { "name": "HDFC Corporate Bond", "value": 1500000, "returns_1yr": 8.1, "returns_3yr": 7.6, "type": "Debt", "sip": 10000 },
+        { "name": "Nippon India Gold ETF", "value": 820000, "returns_1yr": 12.4, "returns_3yr": 9.8, "type": "Gold ETF", "sip": 5000 }
+      ],
+      "banking": {
+        "savings_account": { "bank": "Kotak Mahindra", "balance": 850000, "interest_rate": 4.0 },
+        "fd": [
+          { "bank": "ICICI Bank", "amount": 2000000, "tenure_months": 24, "interest_rate": 7.4, "maturity_date": "2027-03-01" },
+          { "bank": "Axis Bank", "amount": 1000000, "tenure_months": 12, "interest_rate": 7.2, "maturity_date": "2026-09-15" }
+        ],
+        "loans": []
+      },
+      "insurance": {
+        "term_life": { "cover": 30000000, "premium": 42000, "insurer": "LIC", "policy_term_years": 20 },
+        "health": { "cover": 2000000, "premium": 28000, "insurer": "Niva Bupa", "family_floater": true },
+        "critical_illness": { "cover": 5000000, "premium": 18000, "insurer": "ICICI Lombard" },
+        "life_stage": "Married with 2 children",
+        "coverage_gap": "Adequate coverage — review in 2 years"
+      },
+      "tax": {
+        "section_80c_invested": 150000,
+        "section_80c_limit": 150000,
+        "section_80c_remaining": 0,
+        "taxable_income": 3900000,
+        "tax_bracket": "30%",
+        "tax_payable": 920000,
+        "elss_invested": 0,
+        "nps_invested": 50000,
+        "hra_claimed": false,
+        "home_loan_interest_claimed": 0,
+        "capital_gains": { "stcg": 0, "ltcg": 85000 }
+      },
+      "real_estate": {
+        "properties": [
+          { "type": "Residential", "city": "Bangalore", "value": 12000000, "purchase_price": 7000000, "rental_income": 0, "status": "Self-occupied" },
+          { "type": "Commercial", "city": "Bangalore", "value": 4500000, "purchase_price": 3000000, "rental_income": 35000, "status": "Rented" }
+        ],
+        "home_loan_outstanding": 0,
+        "rental_yield": 9.3
+      },
+      "retirement": {
+        "target_retirement_age": 55,
+        "years_to_retirement": 10,
+        "current_corpus": 8200000,
+        "required_corpus": 100000000,
+        "monthly_retirement_need": 250000,
+        "nps_balance": 1800000,
+        "nps_monthly_contribution": 20000,
+        "ppf_balance": 2100000,
+        "ppf_annual_contribution": 150000,
+        "epf_balance": 3200000
+      }
+    },
+    {
+      "id": "C003",
+      "name": "Anjali Singh",
+      "age": 28,
+      "city": "Delhi",
+      "portfolio_value": 450000,
+      "sip_amount": 8000,
+      "risk_profile": "Aggressive",
+      "annual_income": 900000,
+      "monthly_expenses": 35000,
+      "financial_goal": "Build ₹1Cr corpus in 10 years",
+      "investments": {
+        "equity": 80,
+        "debt": 10,
+        "gold": 5,
+        "real_estate": 5
+      },
+      "funds": [
+        { "name": "Nippon India Small Cap", "value": 220000, "returns_1yr": 38.6, "returns_3yr": 28.4, "type": "Small Cap", "sip": 3000 },
+        { "name": "Quant Active Fund", "value": 180000, "returns_1yr": 42.1, "returns_3yr": 32.7, "type": "Multi Cap", "sip": 3000 },
+        { "name": "Parag Parikh Flexi Cap", "value": 50000, "returns_1yr": 18.3, "returns_3yr": 16.9, "type": "Flexi Cap", "sip": 2000 }
+      ],
+      "banking": {
+        "savings_account": { "bank": "ICICI Bank", "balance": 45000, "interest_rate": 3.5 },
+        "fd": [],
+        "loans": [
+          { "type": "Personal Loan", "bank": "Bajaj Finance", "outstanding": 120000, "emi": 5500, "rate": 14.0, "tenure_remaining_months": 24 }
+        ]
+      },
+      "insurance": {
+        "term_life": null,
+        "health": { "cover": 300000, "premium": 6500, "insurer": "Care Health", "family_floater": false },
+        "life_stage": "Single",
+        "coverage_gap": "No term life — urgent recommendation. Health cover too low at ₹3L"
+      },
+      "tax": {
+        "section_80c_invested": 72000,
+        "section_80c_limit": 150000,
+        "section_80c_remaining": 78000,
+        "taxable_income": 780000,
+        "tax_bracket": "20%",
+        "tax_payable": 62400,
+        "elss_invested": 24000,
+        "nps_invested": 0,
+        "hra_claimed": true,
+        "home_loan_interest_claimed": 0,
+        "capital_gains": { "stcg": 28000, "ltcg": 0 }
+      },
+      "real_estate": {
+        "properties": [],
+        "home_loan_outstanding": 0,
+        "rental_yield": 0,
+        "note": "No property — renting in Delhi at ₹18,000/month"
+      },
+      "retirement": {
+        "target_retirement_age": 55,
+        "years_to_retirement": 27,
+        "current_corpus": 450000,
+        "required_corpus": 30000000,
+        "monthly_retirement_need": 80000,
+        "nps_balance": 0,
+        "nps_monthly_contribution": 0,
+        "ppf_balance": 48000,
+        "ppf_annual_contribution": 48000,
+        "epf_balance": 95000
+      }
+    },
+    {
+      "id": "C004",
+      "name": "Vikram Nair",
+      "age": 52,
+      "city": "Chennai",
+      "portfolio_value": 15600000,
+      "sip_amount": 0,
+      "risk_profile": "Conservative",
+      "annual_income": 6000000,
+      "monthly_expenses": 200000,
+      "financial_goal": "Retire at 60 preserving capital",
+      "investments": {
+        "equity": 20,
+        "debt": 55,
+        "gold": 15,
+        "real_estate": 10
+      },
+      "funds": [
+        { "name": "DSP Short Term Fund", "value": 4200000, "returns_1yr": 7.8, "returns_3yr": 7.2, "type": "Short Term Debt", "sip": 0 },
+        { "name": "Aditya Birla Sun Life Gilt", "value": 3100000, "returns_1yr": 8.6, "returns_3yr": 7.9, "type": "Gilt", "sip": 0 },
+        { "name": "HDFC Nifty 50 ETF", "value": 3120000, "returns_1yr": 13.4, "returns_3yr": 11.2, "type": "Index ETF", "sip": 0 }
+      ],
+      "banking": {
+        "savings_account": { "bank": "SBI", "balance": 2200000, "interest_rate": 3.0 },
+        "fd": [
+          { "bank": "SBI", "amount": 5000000, "tenure_months": 36, "interest_rate": 7.5, "maturity_date": "2028-01-01" },
+          { "bank": "Post Office", "amount": 2000000, "tenure_months": 60, "interest_rate": 7.5, "maturity_date": "2030-01-01" }
+        ],
+        "loans": []
+      },
+      "insurance": {
+        "term_life": { "cover": 50000000, "premium": 95000, "insurer": "Max Life", "policy_term_years": 15 },
+        "health": { "cover": 5000000, "premium": 52000, "insurer": "Niva Bupa", "family_floater": true },
+        "critical_illness": { "cover": 10000000, "premium": 32000, "insurer": "HDFC Ergo" },
+        "life_stage": "Married with 2 adult children",
+        "coverage_gap": "Excellent coverage — no gaps identified"
+      },
+      "tax": {
+        "section_80c_invested": 150000,
+        "section_80c_limit": 150000,
+        "section_80c_remaining": 0,
+        "taxable_income": 5500000,
+        "tax_bracket": "30%",
+        "tax_payable": 1350000,
+        "elss_invested": 0,
+        "nps_invested": 50000,
+        "hra_claimed": false,
+        "home_loan_interest_claimed": 0,
+        "capital_gains": { "stcg": 0, "ltcg": 420000 }
+      },
+      "real_estate": {
+        "properties": [
+          { "type": "Residential", "city": "Chennai", "value": 15000000, "purchase_price": 6000000, "rental_income": 0, "status": "Self-occupied" },
+          { "type": "Residential", "city": "Coimbatore", "value": 4500000, "purchase_price": 2000000, "rental_income": 28000, "status": "Rented" }
+        ],
+        "home_loan_outstanding": 0,
+        "rental_yield": 7.5
+      },
+      "retirement": {
+        "target_retirement_age": 60,
+        "years_to_retirement": 8,
+        "current_corpus": 15600000,
+        "required_corpus": 80000000,
+        "monthly_retirement_need": 350000,
+        "nps_balance": 4800000,
+        "nps_monthly_contribution": 50000,
+        "ppf_balance": 5200000,
+        "ppf_annual_contribution": 150000,
+        "epf_balance": 8500000,
+        "swp_plan": { "suggested_monthly_withdrawal": 80000, "from_corpus": 15000000, "expected_duration_years": 25 }
+      }
+    }
+  ],
+  "market_summary": {
+    "nifty_50": 22847,
+    "sensex": 75321,
+    "nifty_change": "+0.62%",
+    "sensex_change": "+0.58%",
+    "top_sector": "IT & Pharma",
+    "date": "2026-03-15",
+    "usd_inr": 83.42,
+    "gold_price_10g": 68450,
+    "repo_rate": 6.5,
+    "inflation_rate": 4.8,
+    "fd_best_rate": 7.5,
+    "nifty_pe_ratio": 22.4
+  },
+  "products": {
+    "fd_rates": [
+      { "bank": "SBI", "rate_1yr": 6.8, "rate_2yr": 7.0, "rate_3yr": 7.1, "senior_citizen_extra": 0.5 },
+      { "bank": "HDFC Bank", "rate_1yr": 6.9, "rate_2yr": 7.15, "rate_3yr": 7.25, "senior_citizen_extra": 0.5 },
+      { "bank": "ICICI Bank", "rate_1yr": 6.9, "rate_2yr": 7.1, "rate_3yr": 7.2, "senior_citizen_extra": 0.5 },
+      { "bank": "Axis Bank", "rate_1yr": 7.0, "rate_2yr": 7.2, "rate_3yr": 7.35, "senior_citizen_extra": 0.75 },
+      { "bank": "Kotak Mahindra", "rate_1yr": 7.1, "rate_2yr": 7.25, "rate_3yr": 7.4, "senior_citizen_extra": 0.5 }
+    ],
+    "home_loan_rates": [
+      { "bank": "SBI", "rate": 8.5, "processing_fee": 0.35, "max_tenure_years": 30 },
+      { "bank": "HDFC Bank", "rate": 8.75, "processing_fee": 0.5, "max_tenure_years": 30 },
+      { "bank": "ICICI Bank", "rate": 8.75, "processing_fee": 0.5, "max_tenure_years": 25 },
+      { "bank": "LIC HFL", "rate": 8.4, "processing_fee": 0.25, "max_tenure_years": 30 }
+    ],
+    "insurance_plans": [
+      { "type": "Term Life", "insurer": "HDFC Life Click 2 Protect", "cover": 10000000, "premium_30yr": 8500, "claim_ratio": 99.5 },
+      { "type": "Term Life", "insurer": "ICICI Pru iProtect Smart", "cover": 10000000, "premium_30yr": 8200, "claim_ratio": 97.9 },
+      { "type": "Term Life", "insurer": "Max Life Smart Secure Plus", "cover": 10000000, "premium_30yr": 7800, "claim_ratio": 99.3 },
+      { "type": "Health", "insurer": "Niva Bupa ReAssure 2.0", "cover": 1000000, "premium_family": 22000, "no_claim_bonus": "100%" },
+      { "type": "Health", "insurer": "Star Health Comprehensive", "cover": 1000000, "premium_family": 18500, "no_claim_bonus": "50%" }
+    ]
+  },
+  "tax_rules": {
+    "fy": "2025-26",
+    "section_80c_limit": 150000,
+    "section_80d_individual": 25000,
+    "section_80d_senior_citizen": 50000,
+    "nps_additional_deduction": 50000,
+    "home_loan_interest_limit": 200000,
+    "ltcg_exemption_limit": 125000,
+    "ltcg_rate": "12.5%",
+    "stcg_rate": "20%",
+    "new_regime_slabs": [
+      { "income_upto": 300000, "tax": "Nil" },
+      { "income_upto": 700000, "tax": "5%" },
+      { "income_upto": 1000000, "tax": "10%" },
+      { "income_upto": 1200000, "tax": "15%" },
+      { "income_upto": 1500000, "tax": "20%" },
+      { "income_above": 1500000, "tax": "30%" }
+    ],
+    "old_regime_slabs": [
+      { "income_upto": 250000, "tax": "Nil" },
+      { "income_upto": 500000, "tax": "5%" },
+      { "income_upto": 1000000, "tax": "20%" },
+      { "income_above": 1000000, "tax": "30%" }
+    ]
+  },
+  "real_estate_data": {
+    "city_price_per_sqft": {
+      "Mumbai": { "min": 15000, "max": 45000, "avg": 28000 },
+      "Bangalore": { "min": 6000, "max": 18000, "avg": 10000 },
+      "Delhi": { "min": 8000, "max": 25000, "avg": 14000 },
+      "Chennai": { "min": 5000, "max": 14000, "avg": 8500 },
+      "Hyderabad": { "min": 5500, "max": 15000, "avg": 9000 },
+      "Pune": { "min": 5000, "max": 14000, "avg": 8000 }
+    },
+    "rental_yield_by_city": {
+      "Mumbai": "2.5-3.5%",
+      "Bangalore": "3.0-4.5%",
+      "Delhi": "2.8-4.0%",
+      "Chennai": "3.5-5.0%",
+      "Hyderabad": "3.5-5.5%",
+      "Pune": "3.0-4.5%"
+    },
+    "reits": [
+      { "name": "Embassy Office Parks REIT", "price": 342, "yield": 6.8, "type": "Commercial" },
+      { "name": "Mindspace Business Parks REIT", "price": 298, "yield": 7.1, "type": "Commercial" },
+      { "name": "Brookfield India REIT", "price": 245, "yield": 8.2, "type": "Commercial" }
+    ]
+  },
+  "retirement_benchmarks": {
+    "nps_returns_equity": 12.5,
+    "nps_returns_debt": 8.2,
+    "ppf_rate": 7.1,
+    "epf_rate": 8.25,
+    "swp_safe_withdrawal_rate": 4.0,
+    "inflation_assumption": 6.0,
+    "life_expectancy": 85,
+    "thumb_rule_corpus": "25x annual expenses at retirement"
+  },
+  "services": {
+    "investment": "Mutual funds, SIP planning, portfolio review, equity & debt allocation, fund selection, returns analysis",
+    "banking": "Savings accounts, FDs, recurring deposits, home loans, personal loans, interest rates",
+    "insurance": "Term life insurance, health insurance, ULIP, critical illness cover, premium analysis",
+    "tax": "ITR filing, ELSS investments, Section 80C deductions, capital gains tax, tax bracket planning",
+    "realestate": "Property investment, REITs, home loan advisory, rental yield analysis, EMI calculation",
+    "retirement": "NPS, PPF, pension plans, retirement corpus calculation, SWP planning"
+  },
+  "suggested_questions": {
+    "investment": [
+      "Show portfolio allocation for all clients",
+      "Compare 1-year returns of all mutual funds",
+      "Which clients have aggressive risk profiles?",
+      "Download client portfolio summary as CSV"
+    ],
+    "banking": [
+      "Compare FD rates across all banks",
+      "Which clients have active loans?",
+      "Show savings account balances for all clients",
+      "Who has the highest FD investment?"
+    ],
+    "tax": [
+      "Which clients haven't fully utilised 80C?",
+      "Show tax brackets for all clients",
+      "Who needs ELSS investment planning?",
+      "Show capital gains for all clients"
+    ],
+    "insurance": [
+      "Which clients don't have term life insurance?",
+      "Compare health cover amounts across clients",
+      "Show total insurance premiums per client",
+      "Which clients have critical illness cover?"
+    ],
+    "realestate": [
+      "Show all client properties",
+      "Which clients earn rental income?",
+      "Compare property values across clients",
+      "Show REIT options available"
+    ],
+    "retirement": [
+      "Who is closest to retirement age?",
+      "Compare NPS and PPF balances across clients",
+      "Which clients are on track for retirement?",
+      "Show EPF balances for all clients"
+    ]
+  }
+}
