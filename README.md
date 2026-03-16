@@ -1,177 +1,153 @@
-# 1 Finance — Internal Stakeholder Chatbot (Gemini Edition)
+# 1 Finance — Internal Stakeholder Chatbot Portal
 
-A professional dark-themed internal chatbot portal for 1 Finance stakeholders.
-AI powered by **Google Gemini 1.5 Flash** — completely free, no credit card needed.
+A production-ready internal web portal built for 1 Finance stakeholders to query client financial data through AI-powered service chatbots.
+
+**Built by:** Supriya Patil  
+**Submitted:** 16 March 2026
+
+---
+
+## Live Demo
+
+🔗 **[https://1finance-chatbot.vercel.app](https://1finance-chatbot.vercel.app)**
+
+**Demo Credentials**
+- Email: `demo@1finance.co.in`
+- Password: `Demo@1234`
+- OTP: Press `F12` → Console tab to view
 
 ---
 
 ## Features
 
-- Two-step auth — company email validation + 6-digit OTP
-- 6 service tabs — Investment, Banking, Insurance, Tax, Real Estate, Retirement
-- Per-tab chat history — each service has isolated conversation history
-- AI chatbot — Gemini 1.5 Flash with mock client data injected as context
-- Inline charts — bar, pie, line charts via Recharts
-- CSV export — one-click download of any tabular data
-- Loading / error / empty states handled
-- Responsive — desktop and tablet
+**Authentication**
+- Two-step login — company email validation + 6-digit OTP
+- Personal email domains blocked (Gmail, Yahoo, Outlook etc.)
+- Password requires 8+ characters, letters, numbers and a symbol
+- Stay logged in option with localStorage persistence
+- Auto-redirect on return visits for authenticated users
+
+**Service Chatbots**
+- 6 independent chatbots — Investment, Banking, Insurance, Tax Planning, Real Estate, Retirement
+- Each chatbot is scoped strictly to its service domain
+- AI responses powered by Google Gemini 1.5 Flash
+- Smart mock fallback with real data when API is unavailable
+- Inline chart rendering — pie, bar and line charts via Recharts
+- One-click CSV export for tabular data responses
+- Suggestion chips after every response for guided navigation
+
+**Chat Management**
+- Per-service chat history stored in localStorage
+- Persistent across browser sessions
+- Recent Activity panel showing top 5 queries across all services
+- Continue Last Query prompt for quick resumption
+
+**UI & Experience**
+- Live clock in market ticker bar
+- Typing indicator while AI is responding
+- Loading, empty and error states on all screens
+- Responsive layout across desktop and tablet
+
+---
+
+## Design Decisions
+
+**Colour Scheme**  
+The dark gold palette (`#C9A84C` gold on `#0A0A0A` near-black) directly mirrors the official 1Finance website aesthetic — communicating the same sense of premium financial expertise and trust. Each service module uses a distinct accent colour consistent with the 1Finance brand's approach to visual hierarchy:
+
+| Service | Accent | Rationale |
+|---|---|---|
+| Investment | `#2E9E5B` Forest Green | Growth, returns, equity markets |
+| Banking | `#C9A84C` Gold | Stability, wealth, financial products |
+| Insurance | `#E8843A` Amber | Protection, warmth, risk coverage |
+| Tax Planning | `#4A90D9` Blue | Compliance, trust, government |
+| Real Estate | `#8B5E3C` Earthy Brown | Property, land, tangible assets |
+| Retirement | `#B59AE8` Soft Purple | Long-term vision, calm, planning |
+
+These accent colours are applied consistently across the sidebar, header, send button, typing indicator, message borders and suggestion chips — creating a cohesive per-service identity without ever feeling disconnected from the parent brand.
+
+**Typography**  
+Playfair Display for headings (matching 1Finance's editorial tone) and DM Sans for UI text (clean, modern, readable at small sizes).
+
+**Chart Strategy**  
+Pie charts for proportions and allocations, bar charts for cross-client comparisons, line charts for rates and trends. Charts are only rendered when they genuinely add value — simple factual answers return plain text or bullet points.
 
 ---
 
 ## Tech Stack
 
-| Layer      | Technology              |
-|------------|-------------------------|
-| Framework  | React 18 + Vite         |
-| Styling    | Tailwind CSS            |
-| Routing    | React Router v6         |
-| Charts     | Recharts                |
-| AI         | Google Gemini 1.5 Flash |
-| Deploy     | Vercel (free)           |
+| Layer | Technology |
+|---|---|
+| Frontend | React 18 + Vite |
+| Styling | Tailwind CSS + inline styles |
+| Routing | React Router v6 |
+| Charts | Recharts |
+| AI | Google Gemini 1.5 Flash API |
+| Data | Mock JSON (`src/data/mockData.json`) |
+| Deployment | Vercel |
 
 ---
 
-## Step-by-Step Setup (From Zero)
+## Setup Instructions
 
-### Step 1 — Install Node.js
-
-Download from https://nodejs.org — choose the LTS version.
-After installing, verify in terminal:
-
+**Prerequisites:** Node.js v18+
 ```bash
-node --version   # v18 or higher
-npm --version
-```
+# 1. Clone the repository
+git clone https://github.com/Supriya-645/1finance_chatbot.git
+cd 1finance_chatbot
 
-### Step 2 — Get your FREE Gemini API key
-
-1. Go to https://aistudio.google.com
-2. Sign in with any Google account
-3. Click "Get API Key" → "Create API key in new project"
-4. Copy the key (starts with "AIza...")
-5. No credit card. No billing. Free forever up to 60 req/min.
-
-### Step 3 — Set up the project
-
-Unzip the downloaded project folder, then in your terminal:
-
-```bash
-cd 1finance-chatbot
+# 2. Install dependencies
 npm install
-```
 
-### Step 4 — Add your API key
-
-```bash
+# 3. Set up environment variables
 cp .env.example .env
-```
+# Edit .env and add your Gemini API key
+# Get a free key from https://aistudio.google.com
 
-Open the `.env` file in any text editor and paste your key:
-
-```
-VITE_GEMINI_API_KEY=AIzaSy...your-actual-key-here
-```
-
-### Step 5 — Run locally
-
-```bash
+# 4. Start development server
 npm run dev
+# Open http://localhost:3000
+
+# 5. Build for production
+npm run build
 ```
 
-Open http://localhost:3000 in your browser.
-
-### Step 6 — Demo login
-
-| Field    | Value                        |
-|----------|------------------------------|
-| Email    | demo@1finance.co.in          |
-| Password | any 6+ character string      |
-| OTP      | press F12 → Console tab      |
-
----
-
-## Deploy to Vercel (Free)
-
-### Option A — Website (easiest)
-
-1. Push to GitHub:
-```bash
-git init
-git add .
-git commit -m "1Finance chatbot"
-# create repo on github.com, then:
-git remote add origin https://github.com/YOUR_NAME/1finance-chatbot.git
-git push -u origin main
+**.env file:**
+```
+VITE_GEMINI_API_KEY=your-gemini-api-key-here
 ```
 
-2. Go to vercel.com → Sign up with GitHub → "Add New Project" → Import repo
-3. Before deploying, click "Environment Variables" and add:
-   - Key:   VITE_GEMINI_API_KEY
-   - Value: AIzaSy...your-key
-4. Click Deploy — live in ~60 seconds
-
-### Option B — Terminal
-
-```bash
-npm i -g vercel
-vercel login
-vercel --prod
-```
-
-Then in Vercel dashboard → Settings → Environment Variables → add VITE_GEMINI_API_KEY → Redeploy.
+> The app works fully without an API key using built-in mock responses with real client data, charts and CSV exports.
 
 ---
 
 ## Project Structure
-
 ```
 src/
 ├── components/
-│   ├── ChatInput.jsx         # Message input with suggestions
-│   ├── ChatMessage.jsx       # Bubbles with chart + CSV rendering
-│   ├── ChartRenderer.jsx     # Recharts bar/pie/line
-│   ├── Sidebar.jsx           # Per-tab chat history
-│   └── TypingIndicator.jsx   # Animated typing dots
+│   ├── ChatInput.jsx       # Message input with suggestion chips
+│   ├── ChatMessage.jsx     # Message renderer with bold/bullet/code support
+│   ├── ChartRenderer.jsx   # Recharts pie/bar/line renderer
+│   ├── Sidebar.jsx         # Per-service chat history sidebar
+│   └── TypingIndicator.jsx # Animated typing dots
 ├── data/
-│   └── mockData.json         # Mock client data (4 clients)
+│   └── mockData.json       # Client data, market data, products
 ├── pages/
-│   ├── LoginPage.jsx         # Email validation + password
-│   ├── OTPPage.jsx           # 6-digit OTP with resend
-│   ├── ServicesPage.jsx      # Service cards dashboard
-│   └── ChatPage.jsx          # Main chat interface
-├── utils/
-│   ├── exportCSV.js          # CSV download utility
-│   └── geminiService.js      # Gemini API + mock fallback
-├── App.jsx                   # Routes + auth guard
-├── index.css                 # Global styles + Tailwind
-└── main.jsx                  # Entry point
+│   ├── LoginPage.jsx       # Email + password with validation
+│   ├── OTPPage.jsx         # 6-digit OTP verification
+│   ├── ServicesPage.jsx    # Service selection + recent activity panel
+│   └── ChatPage.jsx        # Main chatbot interface
+└── utils/
+    ├── exportCSV.js        # CSV generation and download
+    └── geminiService.js    # Gemini API + mock response engine
 ```
 
 ---
 
-## Cost
+## Mock Data
 
-Gemini 1.5 Flash free tier:
-- 60 requests per minute
-- 1 million tokens per minute
-- 1,500 requests per day
-- No credit card ever needed
-
-This is more than enough for an internal stakeholder tool.
+`src/data/mockData.json` contains 4 fictional client profiles (Priya Sharma, Rahul Mehta, Anjali Singh, Vikram Nair) with complete data across all 6 service domains — investments, banking, insurance, tax, real estate and retirement. Also includes market summary, product rates and tax rules for FY 2025-26.
 
 ---
 
-## Submission Checklist
-
-- [x] GitHub repository with source code
-- [x] Mock JSON data (src/data/mockData.json)
-- [x] README with setup instructions
-- [x] Login with company email validation
-- [x] OTP two-factor authentication
-- [x] Services dashboard (6 services)
-- [x] Chat interface with per-tab history
-- [x] Chart rendering (bar, pie, line)
-- [x] CSV export button
-- [x] Loading, error, empty states
-- [x] Responsive layout
-- [x] AI integration via Gemini (optional task done)
+*Internal use only · 1 Finance Stakeholder Portal · Powered by Google Gemini 1.5 Flash*
