@@ -9,7 +9,7 @@ A production-ready internal web portal built for 1 Finance stakeholders to query
 
 ## Live Demo
 
-🔗 **[https://1finance-chatbot.vercel.app](1finance-chatbot-4mdtk6rfs-supriya-645s-projects.vercel.app)**
+🔗 **[https://1finance-chatbot.vercel.app](https://1finance-chatbot.vercel.app)**
 
 **Demo Credentials**
 - Email: `demo@1finance.co.in`
